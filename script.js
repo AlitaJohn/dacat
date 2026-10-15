@@ -1,8 +1,7 @@
 const CONFIG = {
-  tokenAddress: "",
+  tokenAddress: "796H6fnptDnpRUDpupkvZoMNMmnD6ZTayVnVUSaTpump",
   pumpFunUrl: "",
   twitter: "https://x.com/dacat_x",
-  telegram: "https://t.me/dacat_tg",
 };
 
 function getPumpFunUrl() {
@@ -69,10 +68,6 @@ function initSocialLinks() {
 
   document.querySelectorAll("[data-pumpfun]").forEach((el) => {
     el.href = pumpUrl;
-  });
-
-  document.querySelectorAll("[data-telegram]").forEach((el) => {
-    if (CONFIG.telegram) el.href = CONFIG.telegram;
   });
 
   document.querySelectorAll("[data-twitter]").forEach((el) => {
