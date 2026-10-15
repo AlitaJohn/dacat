@@ -7,14 +7,14 @@
 }
 
 :root {
-  --void: #04060e;
-  --ink: #f3f7ff;
-  --mute: #a9b8ce;
-  --mint: #3dffb0;
-  --mint-deep: #14c98a;
-  --cyan: #3ecbff;
-  --paper: #0a1222;
-  --line: rgba(160, 210, 255, 0.16);
+  --void: #07010f;
+  --ink: #fff5fb;
+  --mute: #d7b8cf;
+  --mint: #ff4ec8;
+  --mint-deep: #e018a8;
+  --cyan: #ffb15a;
+  --paper: #160818;
+  --line: rgba(255, 90, 180, 0.2);
   --font-display: "Rajdhani", "Segoe UI", sans-serif;
   --font-xl: "Orbitron", "Rajdhani", sans-serif;
   --font-body: "Outfit", "Segoe UI", sans-serif;
@@ -28,8 +28,8 @@ body {
   font-family: var(--font-body);
   color: var(--ink);
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(62, 203, 255, 0.14), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(61, 255, 176, 0.08), transparent 50%),
+    radial-gradient(1200px 600px at 10% -10%, rgba(255, 78, 200, 0.16), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(255, 140, 60, 0.12), transparent 50%),
     var(--void);
   line-height: 1.7;
   overflow-x: hidden;
@@ -59,9 +59,9 @@ ul, ol { list-style: none; }
   position: fixed;
   inset: 0 0 auto;
   z-index: 100;
-  background: rgba(4, 6, 14, 0.78);
+  background: rgba(7, 1, 15, 0.78);
   backdrop-filter: blur(18px);
-  box-shadow: inset 0 -1px 0 rgba(61, 255, 176, 0.45);
+  box-shadow: inset 0 -1px 0 rgba(255, 78, 200, 0.55);
 }
 
 .nav {
@@ -88,8 +88,8 @@ ul, ol { list-style: none; }
   object-fit: contain;
   background: #000;
   border-radius: 50%;
-  border: 1px solid rgba(61, 255, 176, 0.55);
-  box-shadow: 0 0 18px rgba(62, 203, 255, 0.35);
+  border: 1px solid rgba(255, 78, 200, 0.7);
+  box-shadow: 0 0 18px rgba(255, 78, 200, 0.4);
 }
 
 .nav-logo {
@@ -184,7 +184,7 @@ ul, ol { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center center;
   border-radius: 0;
 }
 
@@ -193,7 +193,7 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4, 6, 14, 0.42) 0%, rgba(4, 6, 14, 0) 22%, rgba(4, 6, 14, 0) 58%, rgba(4, 6, 14, 0.92) 100%);
+    linear-gradient(180deg, rgba(7, 1, 15, 0.55) 0%, rgba(7, 1, 15, 0.08) 24%, rgba(7, 1, 15, 0.28) 58%, rgba(7, 1, 15, 0.94) 100%);
   pointer-events: none;
 }
 
@@ -241,7 +241,7 @@ ul, ol { list-style: none; }
   margin: 0.9rem 0 0.85rem;
   padding: 0.15rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid rgba(61, 255, 176, 0.55);
+  border: 1px solid rgba(255, 78, 200, 0.55);
   font-family: var(--font-xl);
   font-size: 0.95rem;
   letter-spacing: 0.16em;
@@ -292,10 +292,10 @@ ul, ol { list-style: none; }
 .banner-frame {
   margin: 0;
   background: #000;
-  border: 1px solid rgba(61, 255, 176, 0.28);
+  border: 1px solid rgba(255, 78, 200, 0.35);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(62, 203, 255, 0.12);
+  box-shadow: 0 0 40px rgba(255, 78, 200, 0.16);
 }
 
 .banner-frame img {
@@ -334,15 +334,15 @@ ul, ol { list-style: none; }
 .btn-mint {
   background: var(--mint);
   border-color: var(--mint);
-  color: #04140c;
-  box-shadow: 0 0 22px rgba(61, 255, 176, 0.28);
+  color: #1a0612;
+  box-shadow: 0 0 22px rgba(255, 78, 200, 0.35);
 }
 
-.btn-mint:hover { background: #8dffd2; }
+.btn-mint:hover { background: #ff8ad9; }
 
 .btn-line:hover {
   background: var(--cyan);
-  color: #041018;
+  color: #1a0612;
 }
 
 .btn:disabled {
@@ -362,9 +362,9 @@ button.btn {
 
 .marquee {
   overflow: hidden;
-  background: #07140f;
+  background: #140814;
   color: var(--mint);
-  box-shadow: inset 0 -1px 0 rgba(62, 203, 255, 0.45);
+  box-shadow: inset 0 -1px 0 rgba(255, 177, 90, 0.5);
 }
 
 .marquee-track {
@@ -388,7 +388,7 @@ button.btn {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid var(--line);
-  background: rgba(10, 18, 34, 0.92);
+  background: rgba(22, 8, 24, 0.92);
 }
 
 .proof-bar p {
@@ -478,7 +478,7 @@ button.btn {
   justify-content: center;
   align-items: center;
   background:
-    radial-gradient(circle at 50% 45%, rgba(62, 203, 255, 0.18), transparent 58%),
+    radial-gradient(circle at 50% 45%, rgba(255, 78, 200, 0.22), transparent 58%),
     #000;
   padding: 2.6rem 1.6rem;
   align-self: stretch;
@@ -490,8 +490,8 @@ button.btn {
   aspect-ratio: 1;
   object-fit: contain;
   border-radius: 32px;
-  border: 1px solid rgba(61, 255, 176, 0.4);
-  box-shadow: 0 0 48px rgba(62, 203, 255, 0.28);
+  border: 1px solid rgba(255, 78, 200, 0.5);
+  box-shadow: 0 0 48px rgba(255, 78, 200, 0.32);
   background: #000;
 }
 
@@ -500,7 +500,7 @@ button.btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(10, 18, 34, 0.2), rgba(10, 18, 34, 0.85));
+  background: linear-gradient(180deg, rgba(22, 8, 24, 0.2), rgba(22, 8, 24, 0.85));
 }
 
 .lore-list {
@@ -535,10 +535,10 @@ button.btn {
 .meme-card {
   margin: 0;
   background: #000;
-  border: 1px solid rgba(61, 255, 176, 0.35);
+  border: 1px solid rgba(255, 78, 200, 0.4);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 0 28px rgba(62, 203, 255, 0.08);
+  box-shadow: 0 0 28px rgba(255, 78, 200, 0.12);
 }
 
 .meme-card img {
@@ -558,9 +558,9 @@ button.btn {
   gap: 1rem;
   align-items: center;
   padding: 1.25rem 1.35rem;
-  border: 1px solid rgba(61, 255, 176, 0.4);
+  border: 1px solid rgba(255, 78, 200, 0.45);
   border-radius: 999px;
-  background: rgba(10, 18, 34, 0.85);
+  background: rgba(22, 8, 24, 0.85);
 }
 
 .ca-kicker {
@@ -599,13 +599,13 @@ button.btn {
 .token-board article {
   padding: 2rem 1.3rem;
   border-right: 1px solid var(--line);
-  background: rgba(10, 18, 34, 0.72);
+  background: rgba(22, 8, 24, 0.72);
 }
 
 .token-board article:last-child { border-right: 0; }
 
 .token-board article:first-child {
-  background: linear-gradient(180deg, #123d32, #0c2a24);
+  background: linear-gradient(180deg, #5c1848, #2a0c24);
 }
 
 .token-value {
@@ -637,7 +637,7 @@ button.btn {
 .steps li {
   padding: 1.6rem 1.3rem;
   border-right: 1px solid var(--line);
-  background: rgba(10, 18, 34, 0.55);
+  background: rgba(22, 8, 24, 0.55);
 }
 
 .steps li:last-child { border-right: 0; }
@@ -662,8 +662,8 @@ button.btn {
 
 .footer {
   padding: 2.6rem 0 2.2rem;
-  background: #03050c;
-  box-shadow: inset 0 1px 0 rgba(61, 255, 176, 0.45);
+  background: #05010a;
+  box-shadow: inset 0 1px 0 rgba(255, 78, 200, 0.5);
 }
 
 .footer-inner {
@@ -774,7 +774,7 @@ button.btn {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: #04060e;
+    background: #07010f;
     padding: 0.4rem 0 1rem;
     border-bottom: 1px solid var(--line);
     transform: translateY(-120%);
@@ -804,6 +804,8 @@ button.btn {
   }
 
   .nav-toggle { display: flex; }
+
+  .hero-image { object-position: 14% center; }
 
   .section { padding: 4.2rem 0; }
 
